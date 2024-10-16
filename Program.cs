@@ -4,8 +4,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine("Hello, World!");
-        Random rd = new Random();
+        Console.WriteLine("Enter 1 to play the Random Number Guess game");
+        int taskSelect = Convert.ToInt32(Console.ReadLine());
+        while (taskSelect != 1)
+        {
+            Console.WriteLine("Invalid input. Please enter 1 to play the Random Number Guess game");
+            taskSelect = Convert.ToInt32(Console.ReadLine());
+        }
+        if (taskSelect == 1)
+        {
+            RandomNumberGuess();
+        }
+    }
+    
+    static void RandomNumberGuess()
+    {
+
+    Random rd = new Random();
 
         int randNum = rd.Next(1, 10);
 
