@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter 1 to play the Random Number Guess game");
+        Console.WriteLine("Enter 1 to play the Random Number Guess game: ");
         int taskSelect = Convert.ToInt32(Console.ReadLine());
         while (taskSelect != 1)
         {
